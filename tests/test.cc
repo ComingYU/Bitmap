@@ -7,7 +7,7 @@
 // @email xiaowen.nie.cn@gmail.com
 //
 #include <gtest/gtest.h>
-// #include <benchmark/benchmark.h>
+#include <benchmark/benchmark.h>
 
 int main(int argc, char **argv)
 {
@@ -16,11 +16,11 @@ int main(int argc, char **argv)
     int ret = testing::UnitTest::GetInstance()->Run();
     if (ret) return ret;
 
-    // 性能测试
+    //性能测试
     // benchmark::Initialize(&argc, argv);
     // ret = benchmark::ReportUnrecognizedArguments(argc, argv);
     // if (ret) return ret;
     // benchmark::RunSpecifiedBenchmarks();
 
-    return ret;
+    // return ret;
 }
